@@ -23,7 +23,7 @@ with DAG(
     description="Минимальный многоэтапный ML pipeline",
     default_args=DEFAULT_ARGS,
     start_date=datetime(2026, 1, 1),
-    schedule=None,
+    schedule="15 22 * * 0",
     catchup=False,
     tags=["ml", "quickstart"],
 ) as dag:
