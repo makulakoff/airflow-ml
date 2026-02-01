@@ -10,6 +10,7 @@ x-airflow-common: &airflow-common
   volumes:
     - ./dags:/opt/airflow/dags
     - ./artifacts:/opt/airflow/artifacts
+    - airflow_db:/opt/airflow
   user: "${AIRFLOW_UID:-50000}:0"
 
 services:
